@@ -48,6 +48,7 @@ document.getElementById("processButton").addEventListener("click", () => {
   
   function displayResults(transactions) {
     const outputDiv = document.getElementById("output");
+    const outputTotal = document.getElementById("output-total");
     if (!transactions.length) {
       outputDiv.innerHTML = "<p>Nenhuma transação encontrada.</p>";
       return;
@@ -61,5 +62,6 @@ document.getElementById("processButton").addEventListener("click", () => {
   
     resultsHtml.push(`<p><strong>Total: R$ ${total.toFixed(2)}</strong></p>`);
     outputDiv.innerHTML = resultsHtml.join("");
+    outputTotal.innerHTML = total.toFixed(2);
   }
   

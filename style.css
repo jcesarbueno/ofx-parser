@@ -21,6 +21,18 @@ body {
     margin-bottom: 20px;
   }
   
+  #output-total {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: large;
+    font-weight: bold;
+  }
+  
   #output {
     margin-top: 20px;
     padding: 10px;
