@@ -62,6 +62,6 @@ document.getElementById("processButton").addEventListener("click", () => {
   
     resultsHtml.push(`<p><strong>Total: R$ ${total.toFixed(2)}</strong></p>`);
     outputDiv.innerHTML = resultsHtml.join("");
-    outputTotal.innerHTML = total.toFixed(2);
+    outputTotal.innerHTML = `<p>Valor total recebido: R$ <strong> ${total.toFixed(2)}</strong></p>`;
   }
   
